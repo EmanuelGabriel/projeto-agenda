@@ -12,8 +12,24 @@
 		<h1 class="aw-page-title">Cadastro de cliente</h1>
 
 
+		<h:form id="frm">
 
-           
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:commandButton value="Salvar" update="@form" />
+				</p:toolbarGroup>
+
+				<p:toolbarGroup align="right">
+
+					<p:commandButton value="Novo" update="@form" />
+					<p:button value="Pesquisa" outcome="PesquisaClientes" />
+				
+				</p:toolbarGroup>
+				
+			</p:toolbar>
+
+		</h:form>
+
 
 
 	</ui:define>
